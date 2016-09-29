@@ -6,7 +6,8 @@ This ionic/cordova plugin will include SpotHero Partner SDK (https://github.com/
 ## Getting Started
 
 ### Required Access
-You must first obtain access to the currently private GitHub repository `https://github.com/spothero/iOS-Partner-SDK`
+You must first obtain access to the currently private GitHub repository...
+`https://github.com/spothero/iOS-Partner-SDK`
 
 ### Installation
 Navigate to your project directory and using the latest [Cordova CLI](http://cordova.apache.org/):
