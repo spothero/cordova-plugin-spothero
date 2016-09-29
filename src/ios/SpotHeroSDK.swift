@@ -24,8 +24,8 @@ import SpotHero_iOS_Partner_SDK
 
         spotHeroSDK.launchSDKFromViewController(self.viewController)
 
-        let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK);
+        let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK)
 
-        self.commandDelegate.sendPluginResult(pluginResult, callbackId:command.callbackId);
+        self.commandDelegate.sendPluginResult(pluginResult, callbackId:command.callbackId)
     }
 }

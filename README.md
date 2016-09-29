@@ -5,17 +5,22 @@ This ionic/cordova plugin will include SpotHero Partner SDK (https://github.com/
 
 ## Getting Started
 
+### Required Access
+You must first obtain access to the currently private GitHub repository `https://github.com/spothero/iOS-Partner-SDK`
+
 ### Installation
 Navigate to your project directory and using the latest [Cordova CLI](http://cordova.apache.org/):
+
+(with access to currently private repo https://github.com/spothero/cordova-plugin-spothero)
+```
+cordova plugin add https://github.com/spothero/cordova-plugin-spothero
+```
+
+(without access download plugin code and access from a local directory)
 ```
 cordova plugin add [your-local-path]/cordova-plugin-spothero
 ```
 
-or
-
-```
-ionic plugin add [your-local-path]/cordova-plugin-spothero
-```
 
 ### Project Configuration
 
@@ -70,10 +75,7 @@ Build your project from the [Ionic CLI](http://ionicframework.com/getting-starte
 ionic build ios
 ```
 
-Now open your project `.xcworkspace` file and build in Xcode 8.  This is typically located at the follow location...
-```
-your-project/platforms/ios/yourProject.xcworkspace
-```
+Now open your project `.xcworkspace` file and build in Xcode 8.  This is typically located at `your-project/platforms/ios/yourProject.xcworkspace`.
 
 ## More Info
 
