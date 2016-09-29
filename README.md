@@ -1,7 +1,7 @@
 # cordova-plugin-spothero
 This ionic/cordova plugin will include SpotHero Partner SDK (https://github.com/spothero/iOS-Partner-SDK) dependencies and a simple initialization API.
 
-*Note*: Due to the cocoapod based dependencies, after adding this plugin be sure to open the .xcworkspace in XCode instead of the .xcodeproj.
+*Note*: Due to the cocoapods dependencies, after adding this plugin be sure to open the .xcworkspace in XCode instead of the .xcodeproj.
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ ionic plugin add [your-local-path]/cordova-plugin-spothero
 
 ### Project Configuration
 
-Add the following preferences to your ios platform configuratino within your project's root `config.xml`
+Add the following preferences to your ios platform configuration within your project's root `config.xml`
 ```xml
 ...
 <platform name="ios">
@@ -70,7 +70,7 @@ Build your project from the [Ionic CLI](http://ionicframework.com/getting-starte
 ionic build ios
 ```
 
-Now open your project `.xcworkspace` file and build in Xcode 8.  This is typcally located at the follow location...
+Now open your project `.xcworkspace` file and build in Xcode 8.  This is typically located at the follow location...
 ```
 your-project/platforms/ios/yourProject.xcworkspace
 ```
