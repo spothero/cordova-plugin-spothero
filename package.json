@@ -1,0 +1,28 @@
+{
+    "name": "cordova-plugin-spothero",
+    "version": "0.0.1",
+    "description": "SpotHeroSDK",
+    "dependencies": {
+        "command-exists": "^1.0.2",
+        "lodash": "^4.16.2",
+        "xml2js": "^0.4.17"
+    },
+    "cordova": {
+        "id": "cordova-plugin-spothero",
+        "platforms": [
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/spothero/cordova-plugin-spothero"
+    },
+    "keywords": [
+        "spothero",
+        "cordova",
+        "ecosystem:cordova",
+        "cordova-ios"
+    ],
+    "author": "SpotHero",
+    "license": "MIT"
+}
