@@ -1,27 +1,19 @@
 # cordova-plugin-spothero
-This ionic/cordova plugin will include SpotHero Partner SDK (https://github.com/spothero/iOS-Partner-SDK) dependencies and a simple initialization API.
-
-*Note*: Due to the cocoapods dependencies, after adding this plugin be sure to open the .xcworkspace in XCode instead of the .xcodeproj.
+This ionic/cordova plugin will install SpotHero Partner SDK (https://github.com/spothero/iOS-Partner-SDK) dependencies and provide a JavaScript API.
 
 ## Getting Started
 
-### Required Access
-You must first obtain access to the currently private GitHub repository...
-`https://github.com/spothero/iOS-Partner-SDK`
+### Requirements
+- Cordova >= 6.2.x
+- Xcode >= 8
+- iOS Target >= 9.0
 
 ### Installation
 Navigate to your project directory and using the latest [Cordova CLI](http://cordova.apache.org/):
 
-(with access to currently private repo https://github.com/spothero/cordova-plugin-spothero)
 ```
 cordova plugin add https://github.com/spothero/cordova-plugin-spothero
 ```
-
-(without access download plugin code and access from a local directory)
-```
-cordova plugin add [your-local-path]/cordova-plugin-spothero
-```
-
 
 ### Project Configuration
 
@@ -61,9 +53,8 @@ Additional options...
 ```js
 window.cordova.plugins.SpotHeroSDK.init({
     partnerApplicationKey: 'PARTNER_API_KEY', # Partner API key (required)
-    partnerApplicationName: 'Application Name', # Application name (optional)
-    tintColor: 'rgb(0, 0, 0)', # Tint color in rgb string format (optional)
-    textColor: 'rgb(255, 255, 255)', # Text color in rgb string format (optional)
+    tintColor: '#1459ff', # Tint color in hex string format (optional)
+    textColor: '#ffffff', # Text color in hex string format (optional)
     success: successCallback, # SDK launch success callback (optional)
     error: errorCallback # SDK launch error callback (optional)
 });
@@ -71,14 +62,20 @@ window.cordova.plugins.SpotHeroSDK.init({
 
 ### Building
 
-Build your project from the [Ionic CLI](http://ionicframework.com/getting-started/) first to fetch plugin dependencies.
+Build your Ionic/Cordova project first to fetch plugin dependencies (with  [Ionic CLI](http://ionicframework.com/getting-started/))...
 ```
 ionic build ios
 ```
+or without Ionic...
+```
+cordova build ios
+```
 
-Now open your project `.xcworkspace` file and build in Xcode 8.  This is typically located at `your-project/platforms/ios/yourProject.xcworkspace`.
+Next open your project `.xcworkspace` file and build in Xcode 8.  This is typically located at `your-project/platforms/ios/yourProject.xcworkspace`.
 
 ## More Info
+
+Due to the cocoapods dependencies, after adding this plugin be sure to open the .xcworkspace in XCode instead of the .xcodeproj.
 
 For more information on setting up Cordova see [the documentation](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
 

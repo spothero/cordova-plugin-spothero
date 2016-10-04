@@ -8,7 +8,6 @@ exports.init = function(options) {
 
     exec(options.success, options.error, 'SpotHeroSDK', 'startup', [
         options.partnerApplicationKey,
-        options.partnerApplicationName,
         options.tintColor,
         options.textColor
     ]);
