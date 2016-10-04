@@ -49,14 +49,14 @@ if (window.cordova && window.cordova.plugins.SpotHeroSDK) {
 }
 ```
 
-Additional options...
+All options...
 ```js
 window.cordova.plugins.SpotHeroSDK.init({
-    partnerApplicationKey: 'PARTNER_API_KEY', # Partner API key (required)
-    tintColor: '#1459ff', # Tint color in hex string format (optional)
-    textColor: '#ffffff', # Text color in hex string format (optional)
-    success: successCallback, # SDK launch success callback (optional)
-    error: errorCallback # SDK launch error callback (optional)
+    partnerApplicationKey: 'PARTNER_API_KEY', // Partner API key (required)
+    tintColor: '#1459ff', // SDK UI tint color in hex string format (optional)
+    textColor: '#ffffff', // SDK UI text color in hex string format (optional)
+    success: successCallback, // SDK launch success callback (optional)
+    error: errorCallback // SDK launch error callback (optional)
 });
 ```
 
