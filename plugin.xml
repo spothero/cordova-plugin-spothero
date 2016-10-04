@@ -25,6 +25,6 @@
             url="https://github.com/blakgeek/cordova-plugin-cocoapods-support"
         />
         <pods-config ios-min-version="9.0" uses-frameworks="true" />
-        <pod id="SpotHero_iOS_Partner_SDK" git="https://github.com/spothero/Partner-SDK-iOS" />
+        <pod id="SpotHero_iOS_Partner_SDK" git="https://github.com/spothero/Partner-SDK-iOS" branch="master" />
     </platform>
 </plugin>
