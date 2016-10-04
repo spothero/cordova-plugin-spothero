@@ -75,7 +75,7 @@ Next open your project `.xcworkspace` file and build in Xcode 8.  This is typica
 
 ## More Info
 
-Due to the cocoapods dependencies, after adding this plugin be sure to open the .xcworkspace in XCode instead of the .xcodeproj.
+Due to the cocoapods dependencies, after adding this plugin be sure to open the `.xcworkspace` in XCode instead of the `.xcodeproj`.
 
 For more information on setting up Cordova see [the documentation](http://cordova.apache.org/docs/en/latest/guide/cli/index.html).
 
