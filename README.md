@@ -1,5 +1,5 @@
 # cordova-plugin-spothero
-This cordova plugin will install the SpotHero Partner SDK (https://github.com/spothero/iOS-Partner-SDK) and provide a Cordova JavaScript API.
+This cordova plugin will install the SpotHero iOS Partner SDK (https://github.com/spothero/Partner-SDK-iOS) and provide a Cordova JavaScript API.
 
 ## Getting Started
 
