@@ -4,8 +4,8 @@ This ionic/cordova plugin will install SpotHero Partner SDK (https://github.com/
 ## Getting Started
 
 ### Requirements
-- Cordova >= 6.2.x
-- Xcode >= 8
+- Cordova >= 5.x
+- Xcode 8
 - iOS Target >= 9.0
 
 ### Installation
@@ -26,7 +26,7 @@ Add the following preferences to your ios platform configuration within your pro
     ...
 ```
 
-Add the following npm dependencies within the project's root `package.json`
+Add the following npm dependencies within the project's root `package.json`.  Create this file if it does not already exist ([more info](https://docs.npmjs.com/files/package.json)).
 ```js
 "dependencies": {
     ...
