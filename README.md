@@ -4,9 +4,9 @@ This Cordova plugin will install the SpotHero Partner SDK iOS (https://github.co
 ## Getting Started
 
 ### Requirements
-- Cordova >= 5.x
-- Xcode 8
-- iOS Target >= 9.0
+- Cordova >= 5.1
+- Xcode >= 7.3
+- iOS Target >= 9.0  (may be linked to previous versions but not offically supported)
 
 ### Installation
 Navigate to your project directory and using the latest [Cordova CLI](http://cordova.apache.org/):
@@ -74,6 +74,8 @@ cordova build ios
 Next open your project `.xcworkspace` file and build in Xcode 8.  This is typically located at `your-project/platforms/ios/yourProject.xcworkspace`.
 
 ## More Info
+
+macOS Sierra users may experience issues building on Xcode < 8.
 
 Due to the cocoapods dependencies, after adding this plugin be sure to open the `.xcworkspace` in Xcode instead of the `.xcodeproj`.
 
