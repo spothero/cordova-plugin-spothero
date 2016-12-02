@@ -7,6 +7,7 @@ This Cordova plugin will install the SpotHero Partner SDK iOS (https://github.co
 - Cordova >= 5.1
 - Xcode >= 7.3
 - iOS Target >= 9.0  (may be linked to previous versions but not offically supported)
+- Cocoapods gem `sudo gem install cocoapods`
 
 ### Installation
 Navigate to your project directory and using the latest [Cordova CLI](http://cordova.apache.org/):
