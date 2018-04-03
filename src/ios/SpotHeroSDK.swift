@@ -18,7 +18,7 @@ import SpotHero_iOS_Partner_SDK
             spotHeroSDK.textColor = UIColor(hex: textColor)
         }
 
-        spotHeroSDK.launchSDKFromViewController(self.viewController)
+        spotHeroSDK.launchSDK(fromViewController: self.viewController)
 
         let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK)
 
