@@ -3,12 +3,12 @@ import SpotHero_iOS_Partner_SDK
 
 @objc(SpotHeroSDK) class SpotHeroSDK : CDVPlugin {
     func startup(command: CDVInvokedUrlCommand) {
-        let spotHeroSDK = SpotHeroPartnerSDK.SharedInstance
+        let spotHeroSDK = SpotHeroPartnerSDK.shared
         guard let key = command.arguments[0] as? String else {
             return
         }
 
-        SpotHeroPartnerSDK.SharedInstance.partnerApplicationKey = key
+        spotHeroSDK.partnerApplicationKey = key
 
         if let tintColor = command.arguments[1] as? String {
             spotHeroSDK.tintColor = UIColor(hex: tintColor)
@@ -29,24 +29,25 @@ import SpotHero_iOS_Partner_SDK
 public extension UIColor {
     convenience init(hex string: String) {
         var hex = string.hasPrefix("#")
-            ? String(string.characters.dropFirst())
+            ? String(string.dropFirst())
             : string
-
-        guard hex.characters.count == 3 || hex.characters.count == 6
+        
+        guard hex.count == 3 || hex.count == 6
             else {
                 self.init(white: 1.0, alpha: 0.0)
                 return
         }
-
-        if hex.characters.count == 3 {
-            for (index, char) in hex.characters.enumerate() {
-                hex.insert(char, atIndex: hex.startIndex.advancedBy(index * 2))
+        
+        if hex.count == 3 {
+            for (index, char) in hex.enumerated() {
+                hex.insert(char, at: hex.index(hex.startIndex, offsetBy: index * 2))
             }
         }
-
+        
         self.init(
             red:   CGFloat((Int(hex, radix: 16)! >> 16) & 0xFF) / 255.0,
             green: CGFloat((Int(hex, radix: 16)! >> 8) & 0xFF) / 255.0,
-            blue:  CGFloat((Int(hex, radix: 16)!) & 0xFF) / 255.0, alpha: 1.0)
+            blue:  CGFloat((Int(hex, radix: 16)!) & 0xFF) / 255.0, alpha: 1.0
+        )
     }
 }
