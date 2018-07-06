@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin
     id="cordova-plugin-spothero"
-    version="1.0.0"
+    version="2.1.1"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
 >
     <name>SpotHeroSDK</name>
@@ -24,7 +24,7 @@
             id="cordova-plugin-cocoapod-support"
             url="https://github.com/blakgeek/cordova-plugin-cocoapods-support"
         />
-        <pods-config ios-min-version="9.0" uses-frameworks="true" />
-        <pod id="SpotHero_iOS_Partner_SDK" git="https://github.com/spothero/Partner-SDK-iOS" tag="1.0.0" />
+        <pods-config ios-min-version="10.0" uses-frameworks="true" />
+        <pod id="SpotHero_iOS_Partner_SDK" git="https://github.com/spothero/Partner-SDK-iOS" tag="2.1.1" />
     </platform>
 </plugin>
