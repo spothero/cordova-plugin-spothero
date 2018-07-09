@@ -22,7 +22,7 @@ import SpotHero_iOS_Partner_SDK
 
         let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK)
 
-        self.commandDelegate.sendPluginResult(pluginResult, callbackId:command.callbackId)
+        self.commandDelegate.send(pluginResult, callbackId:command.callbackId)
     }
 }
 
