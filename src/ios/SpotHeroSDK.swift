@@ -2,6 +2,7 @@ import Foundation
 import SpotHero_iOS_Partner_SDK
 
 @objc(SpotHeroSDK) class SpotHeroSDK : CDVPlugin {
+    @objc(startup:)
     func startup(command: CDVInvokedUrlCommand) {
         let spotHeroSDK = SpotHeroPartnerSDK.shared
         guard let key = command.arguments[0] as? String else {
