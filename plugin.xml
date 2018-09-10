@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin
     id="cordova-plugin-spothero"
-    version="2.0.1"
+    version="2.0.2"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
 >
     <name>SpotHeroSDK</name>
