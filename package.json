@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-spothero",
-    "version": "2.1.3",
+    "version": "2.2.0",
     "description": "SpotHeroSDK",
     "dependencies": {
         "command-exists": "^1.0.2",
